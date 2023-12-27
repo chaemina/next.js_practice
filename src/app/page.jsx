@@ -9,20 +9,18 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <div>
-        <Link href="/page2" replace={true} scroll={false}>
-          Page2
-        </Link>
-      </div>
-      <div>
-        <Link href="/page2/page3" passHref legacyBehavior>
-          <Btn />
-        </Link>
-      </div>
-      <div>
-        <Page4Template />
-      </div>
-      <h1>Hello,page1!</h1>
+      <section>
+        <div>
+          <Link href="/page2" replace={true} scroll={false}>
+            Page2
+          </Link>
+          <Link href="/page2/page3" passHref legacyBehavior>
+            <Btn />
+          </Link>
+          <Page4Template />
+        </div>
+        <h1>Hello,Home </h1>
+      </section>
     </>
   );
 }
